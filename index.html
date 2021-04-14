@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Practice</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="#" class="logo header__logo">
+                <img src="img/logo.png" alt="Nike">
+            </a>
+            <nav class="menu header__menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#">Lifestyle</a></li>
+                    <li class="menu__item menu__item--active"><a class="menu__link" href="#">Running</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Football</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Skateboarding</a></li>
+                </ul>
+            </nav>
+            <button class="burger header__burger">
+                <img src="img/burger.png" alt="Burger">
+            </button>
+        </header>
+        <article class="product-card">
+            <div class="product-image product-card__image">
+                <ul class="product-image__thumbnails">
+                    <li class="product-image__thumbnail">
+                        <img src="img/thumbnail_1.jpg" alt="Thumbnail 1">
+                    </li>
+                    <li class="product-image__thumbnail">
+                        <img src="img/thumbnail_2.jpg" alt="Thumbnail 2">
+                    </li>
+                    <li class="product-image__thumbnail">
+                        <img src="img/thumbnail_3.jpg" alt="Thumbnail 3">
+                    </li>
+                </ul>
+                <button class="product-image__zoom">
+                    <img src="img/plus.png" alt="Zoom In">
+                </button>
+            </div>
+            <div class="product-info product-card__info">
+                <div class="label product-info__label">New</div>
+                <h1 class="product-info__title">
+                    THE <span>RUNNING</span> HAS JUST BEGUN
+                </h1>
+                <div class="horizontal-spacing">
+                    <h3 class="product-info__subtitle">Huarache</h3>
+                    <ul class="rating product-info__rating">
+                        <li class="rating__star">
+                            <img src="img/star_black.png" alt="Star">
+                        </li>
+                        <li class="rating__star">
+                            <img src="img/star_black.png" alt="Star">
+                        </li>
+                        <li class="rating__star">
+                            <img src="img/star_black.png" alt="Star">
+                        </li>
+                        <li class="rating__star">
+                            <img src="img/star_black.png" alt="Star">
+                        </li>
+                        <li class="rating__star">
+                            <img src="img/star_grey.png" alt="Star Grey">
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-info__price">$ 200</div>
+                <div class="size-select product-info__size">
+                    <h4 class="size-select__title"></h4>
+                    <ul class="size-select__list">
+                        <li class="size-select__item">7</li>
+                        <li class="size-select__item">8</li>
+                        <li class="size-select__item">9</li>
+                        <li class="size-select__item size-select__item--selected">10</li>
+                        <li class="size-select__item">11</li>
+                    </ul>
+                </div>
+                <button class="button button--primary product-info__add-to-cart">ADD TO CART</button>
+                <button class="button">WISHLIST</button>
+            </div>
+            <button class="product-card__close"><img src="img/close.png" alt="Close"></button>
+        </article>
+    </div>
+</body>
+
+</html>

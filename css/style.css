@@ -1,0 +1,264 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+body {
+    height: 100vh;
+    background: url(../img/background.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+}
+
+.logo img {
+    display: block;
+}
+
+.menu {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.menu__list {
+    display: flex;
+    list-style: none;
+}
+
+.menu__item {
+    padding-bottom: 2px;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 36px;
+}
+
+.menu__item--active, .menu__item:hover {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.menu__link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.burger {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.burger img {
+    display: block;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 34px 0;
+}
+
+.header__menu {
+    margin-right: 54px;
+    margin-left: auto;
+}
+
+.product-card {
+    display: flex;
+    position: relative;
+}
+
+.product-card::before, .product-card::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+}
+
+.product-card::before {
+    top: 10px;
+    bottom: 10px;
+    left: -15px;
+    right: -15px;
+}
+
+.product-card::after {
+    top: 20px;
+    bottom: 20px;
+    left: -30px;
+    right: -30px;
+}
+
+.product-card__image {
+    flex-grow: 1;
+}
+
+.product-card__close {
+    position: absolute;
+    top: 10px;
+    right: 11px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.product-image {
+    min-height: 428px;
+    background: url(../img/product_photo.jpg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 24px;
+    position: relative;
+}
+
+.product-image__thumbnails {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.product-image__thumbnail {
+    margin: 0 8px;
+}
+
+.product-image__thumbnail img {
+    display: block;
+}
+
+.product-image__zoom {
+    border: 0;
+    background: none;
+    position: absolute;
+    right: 25px;
+    bottom: 72px;
+}
+
+.product-image__zoom img {
+    display: block;
+}
+
+.product-info {
+    background: rgb(255, 255, 255);
+    width: 248px;
+    padding: 42px 30px;
+    font-family: "Roboto", sans-serif;
+}
+
+.product-info__title {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0 0 12px;
+    font-size: 24px;
+}
+
+.product-info__title span {
+    color: rgb(114, 101, 255);
+}
+
+.product-info__subtitle {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 12px;    
+}
+
+.product-info__price {
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.product-info__size {
+    margin-bottom: 36px;
+}
+
+.product-info__add-to-cart {
+    margin-bottom: 4px;
+}
+
+.product-info__label {
+    margin-bottom: 12px;
+}
+
+.label {
+    background: rgb(255, 166, 13);
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 4px 5px 3px;
+}
+
+.rating {
+    list-style: none;
+    display: flex;
+}
+
+.rating__star {
+    margin: 0 2px;
+}
+
+.horizontal-spacing {
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-spacing > *:not(:last-child) {
+    margin-right: 16px;
+}   
+
+.size-select__title {
+    font-size: 12px;    
+}
+
+.size-select__list {
+    display: flex;
+    list-style: none;
+}
+
+.size-select__item {
+    width: 24px;
+    height: 24px;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.size-select__item:not(:last-child) {
+    margin-right: 17px;
+}
+
+.size-select__item--selected, .size-select__item:hover {
+   border-color: rgb(0, 0, 0);
+}
+
+.button {
+    background: none;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    padding: 8px 26px;
+    min-width: 118px;
+    cursor: pointer;
+}
+
+.button--primary {
+    background: rgb(162, 0, 184);
+    border-color: rgb(162, 0, 184);
+    color: rgb(255, 255, 255);
+}
+
